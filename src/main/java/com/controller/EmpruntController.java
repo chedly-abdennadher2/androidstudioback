@@ -28,12 +28,14 @@ public Emprunt emprunt(@PathVariable int id){
 return repository.findById(id).get();
 }
 @PostMapping("/add") 
-public void save(@RequestBody Emprunt adh){
-repository.save(adh);
+public Emprunt save(@RequestBody Emprunt emprunt){
+repository.save(emprunt);
+return emprunt;
 }
 @PostMapping("/delete") 
-public void delete(@RequestBody Emprunt adh){
-repository.delete(adh);
+public Emprunt delete(@RequestBody Emprunt emprunt){
+repository.delete(emprunt);
+return emprunt;
 }
 
 }

@@ -29,7 +29,8 @@ return repository.findById(id).get();
 }
 @PostMapping("/add") 
 public Emprunt save(@RequestBody Emprunt emprunt){
-repository.save(emprunt);
+System.out.println(emprunt);
+	repository.save(emprunt);
 return emprunt;
 }
 @PostMapping("/delete") 

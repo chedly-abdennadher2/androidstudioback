@@ -77,6 +77,12 @@ public Emprunt(int numemprunt, int id_adherent, int numexemplaire, Date dateempr
 	this.dateretourprevu = dateretourprevu;
 	this.dateretourreel = dateretourreel;
 }
+@Override
+public String toString() {
+	return "Emprunt [numemprunt=" + numemprunt + ", id_adherent=" + id_adherent + ", numexemplaire=" + numexemplaire
+			+ ", dateemprunt=" + dateemprunt + ", dateretourprevu=" + dateretourprevu + ", dateretourreel="
+			+ dateretourreel + "]";
+}
 
 
 }

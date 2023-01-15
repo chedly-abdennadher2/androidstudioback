@@ -63,5 +63,11 @@ public class Livre implements Serializable {
 		return "Livre [numISBN=" + numISBN + ", titre=" + titre + ", auteur=" + auteur + ", dateedition=" + dateedition
 				+ ", exemplaires=" + exemplaires + "]";
 	}
+	public Categorie getCategorie() {
+		return categorie;
+	}
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+	}
 
 }
